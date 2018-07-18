@@ -1,0 +1,37 @@
+{
+  "name": "batch-stream2",
+  "version": "1.0.0",
+  "description": "Transform a stream into batched items",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run ci",
+    "lint": "standard",
+    "ci": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roccomuso/batch-stream2.git"
+  },
+  "keywords": [
+    "batch",
+    "stream",
+    "group",
+    "chunks",
+    "transform",
+    "pipe"
+  ],
+  "author": "Rocco Musolino (@roccomuso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roccomuso/batch-stream2/issues"
+  },
+  "homepage": "https://github.com/roccomuso/batch-stream2#readme",
+  "dependencies": {
+    "readable-stream": "^2.3.6"
+  },
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1",
+    "through2": "^2.0.3"
+  }
+}
