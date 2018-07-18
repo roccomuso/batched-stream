@@ -2,7 +2,7 @@ const {Transform} = require('readable-stream')
 
 class BatchStream extends Transform {
   constructor (options) {
-    let {objectMode, size, strictMode, highWaterMark = 16} = options
+    let {objectMode, size, strictMode} = options
     if (!(Number.isInteger(size) && size > 0)) throw new Error('size is mandatory (number)')
     super(options)
 
@@ -44,7 +44,6 @@ class BatchStream extends Transform {
     }
     callback()
   }
-
 }
 
 module.exports = BatchStream
