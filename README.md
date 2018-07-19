@@ -11,7 +11,7 @@
 ```javascript
 const BatchStream = require('batch-stream2')
 const batch = new BatchStream({
-  size : 5, // Bytes or N. of objects if objectMode is true
+  size : 5, // Bytes or N. of objects (when objectMode is true)
   objectMode: true, // false by default
   strictMode: false // return the rest of the batch when a stream contains a number of items that is not a strict multiply of the batch size
 })
