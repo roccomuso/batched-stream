@@ -1,21 +1,22 @@
 # Batch Stream
 
+[![Build Status](https://travis-ci.org/roccomuso/batchstream.svg?branch=master)](https://travis-ci.org/roccomuso/batchstream)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![NPM Version](https://img.shields.io/npm/v/batch-stream2.svg)](https://www.npmjs.com/package/batch-stream2)
-![node](https://img.shields.io/node/v/batch-stream2.svg)
-[![Dependency Status](https://david-dm.org/roccomuso/batch-stream2.png)](https://david-dm.org/roccomuso/batch-stream2)
+[![NPM Version](https://img.shields.io/npm/v/batchstream.svg)](https://www.npmjs.com/package/batchstream)
+![node](https://img.shields.io/node/v/batchstream.svg)
+[![Dependency Status](https://david-dm.org/roccomuso/batchstream.png)](https://david-dm.org/roccomuso/batchstream)
 
 
 > Transform stream supporting objectMode, which batches a bunch of input data into groups of specified size and will emit arrays, so that you can deal with pieces of input asynchronously.
 
 ## Install
 
-> npm install --save batch-stream2
+> npm install --save batchstream
 
 ## Usage
 
 ```javascript
-const BatchStream = require('batch-stream2')
+const BatchStream = require('batchstream')
 const batch = new BatchStream({
   size : 5, // Bytes or N. of objects (when objectMode is true)
   objectMode: true, // false by default
