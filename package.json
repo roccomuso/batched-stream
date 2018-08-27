@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/roccomuso/batched-stream#readme",
   "dependencies": {
-    "readable-stream": "^2.3.6"
+    "readable-stream": "^3.0.2"
   },
   "devDependencies": {
     "standard": "^11.0.1",
